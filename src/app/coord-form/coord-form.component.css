@@ -1,0 +1,30 @@
+mat-form-field {
+    width: 90%;
+}
+
+mat-card-header {
+    display: flex;
+    justify-content: end;
+    height: 2em;
+}
+
+.form-card {
+    min-width: 10%;
+}
+
+
+.graph-container {
+    position: absolute;
+    height: 40%;
+    width: 100%;
+    bottom: 5%;
+    display: flex;
+}
+
+.graph-right {
+    flex: 1;
+}
+
+.graph-left {
+    flex: 1;
+}

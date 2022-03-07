@@ -1,0 +1,22 @@
+<mgl-map
+    [style]="mapStyle"
+    [zoom]="zoom"
+    [center]="origin"
+    [pitch]="pitch"
+    [doubleClickZoom]="false"
+    [touchZoomRotate]="false"
+    [boxZoom]="false"
+    [antialias]="true"
+    (mapLoad)="map = $event"
+    (mapDblClick)="addMarker($event)"
+    >
+    <div *ngIf="showMarker">
+        <mgl-marker
+          [lngLat]="markerLngLat"
+          [draggable]="markerDraggable"
+          #Amarker
+          (markerDrag)="showDrag($event)"
+        >
+        </mgl-marker>
+    </div>
+</mgl-map>

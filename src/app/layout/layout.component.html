@@ -1,0 +1,10 @@
+<app-coord-form (coordSubmit)="getData($event)"></app-coord-form>
+<app-map></app-map>
+<div *ngIf="dailyChartOptions" class="graph-container">
+  <div class="graph-left">
+      <app-chart [options]="dailyChartOptions"></app-chart>
+  </div>
+  <div class="graph-right">
+      <app-chart [options]="hourlyChartOptions"></app-chart>
+  </div>
+</div>
